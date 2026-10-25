@@ -1,7 +1,7 @@
 {
   "name": "dsh-sticker-dict",
   "version": "0.1.0",
-  "description": "DeepSeek-Harness (dsh) plugin: split a GIF into evenly sampled frames and lay them out as one contact sheet so the vision model sees the whole animation, plus a sticker dictionary keyed by content sha256 so an image already explained is recalled instead of re-read.",
+  "description": "DeepSeek-Harness (dsh) plugin: keeps a sticker dictionary keyed by content sha256 so an image already explained is recalled instead of re-read, and splits a GIF into evenly sampled frames laid out as one contact sheet so the vision model sees the whole animation.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {

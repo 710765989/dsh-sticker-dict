@@ -1,4 +1,4 @@
-﻿# Contributing / 贡献
+# Contributing / 贡献
 
 ## Development / 开发
 
