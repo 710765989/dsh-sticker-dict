@@ -1,0 +1,8 @@
+# dsh-sticker-dict
+#
+# `dsh plugin add` merges this file into the target profile's cordis.patch.yml.
+# Entry id must match the Config namespace used by the settings bridge in
+# lib/index.js (`STICKER_NS = 'sticker-dict'`).
+- insert:
+    - id: sticker-dict
+      name: dsh-sticker-dict

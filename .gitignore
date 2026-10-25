@@ -1,0 +1,16 @@
+# Logs / 日志
+
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local dictionary / 本地字典
+gif-frames/
+*.tgz
+
+# Editor / 编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

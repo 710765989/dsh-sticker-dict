@@ -1,0 +1,75 @@
+{
+  "name": "dsh-sticker-dict",
+  "version": "0.1.0",
+  "description": "DeepSeek-Harness (dsh) plugin: split a GIF into evenly sampled frames and lay them out as one contact sheet so the vision model sees the whole animation, plus a sticker dictionary keyed by content sha256 so an image already explained is recalled instead of re-read.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/gif.js",
+    "lib/dict.js",
+    "cordis.patch.yml",
+    "screenshots.json"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "gif",
+    "sticker-dict",
+    "contact-sheet",
+    "multimodal",
+    "vision",
+    "sticker",
+    "meme",
+    "dictionary",
+    "cache",
+    "token-saving",
+    "qq",
+    "onebot"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/710765989/dsh-sticker-dict.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "1.0.13"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  },  
+  "dsh": {
+    "bundle": {
+      "patch": "cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-commands",
+        "@deepseek-ai/dsh-client-ui-plugin-manager",
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ],
+      "platform": "web"
+    },
+    "engines": {
+      "dsh": ">=0.1.7-rc.1"
+    }
+  }
+}
